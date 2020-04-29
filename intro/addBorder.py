@@ -1,4 +1,5 @@
 def addBorder(picture):
+    """
     result = []
     col = len(picture[0]) + 2
     row = len(picture) + 2
@@ -10,6 +11,17 @@ def addBorder(picture):
             value  += picture[i][j]
         value += '*'
         result.append(value)
+
+    result.append('*' * col)
+    return result
+    """
+
+    result = []
+    col = len(picture[0]) + 2
+    result.append('*' * col)
+
+    for i in picture:
+        result.append('*' + i + '*')
 
     result.append('*' * col)
     return result
