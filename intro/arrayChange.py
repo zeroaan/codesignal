@@ -9,3 +9,4 @@ arrayChange(inputArray) = 3.
 
 
 def arrayChange(inputArray):
+    return
