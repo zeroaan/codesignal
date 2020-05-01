@@ -7,6 +7,4 @@ For inputArray = [1, 1, 1], the output should be
 arrayChange(inputArray) = 3.
 """
 
-
 def arrayChange(inputArray):
-    return
