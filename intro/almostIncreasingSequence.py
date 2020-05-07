@@ -17,3 +17,10 @@ You can remove 3 from the array to get the strictly increasing sequence [1, 2]. 
 """
 
 def almostIncreasingSequence(sequence):
+    a = 0
+    for i in range(len(sequence)-1):
+        if sequence[i]>=sequence[i+1]:
+            a += 1
+    if a > 1:
+        return False
+    return True
