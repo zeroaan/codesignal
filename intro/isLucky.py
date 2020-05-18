@@ -20,9 +20,5 @@ def isLucky(n):
 
     list_n = [int(i) for i in str(n)]
     mid = len(list_n) // 2
-    left = list_n[:mid]
-    right = list_n[mid:]
-    
-    if sum(left) == sum(right):
-        return True
-    return False
+   
+    return sum(list_n[:mid]) == sum(list_n[mid:])
